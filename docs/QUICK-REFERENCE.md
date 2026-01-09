@@ -277,17 +277,19 @@ npm run lint             # Run ESLint
 
 ## Portfolio Projects
 
-7 projects with landing page + dashboard screenshots:
+9 projects with landing page + dashboard screenshots:
 
 | Project | Type | Industry |
 |---------|------|----------|
 | Bluegrass Precision Motorwerks | Web Design | Automotive |
 | FlipOps | SaaS Platform | Real Estate |
 | Sold By You | Web Development | Real Estate |
-| Infinet | SaaS Platform | AI Technology |
+| Pink Post Installations | SaaS Platform | Real Estate Services |
+| Recovery Plus | SaaS Platform | Wellness |
 | Lim & Carlson | E-Commerce | Luxury Retail |
 | Kentucky Gentlemen Cigars | E-Commerce | Tobacco Retail |
 | CAID | SaaS Platform | AI Technology |
+| Infinet | SaaS Platform | AI Technology |
 
 Assets location: `public/projects/`
 

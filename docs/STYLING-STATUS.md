@@ -4,7 +4,7 @@
 
 ## Overview
 
-Migrating Clarity Digital from v2 color system (sky blue `brand-500`) to v4 dark-first luxury aesthetic (indigo `#6366F1` accent).
+Clarity Digital uses a light-mode design system with indigo accent (`#6366F1`). Dark mode has been removed - the site is light-only.
 
 ## Completed ✅
 
@@ -348,6 +348,8 @@ When updating a component:
 
 ## Notes
 
+- **LIGHT MODE ONLY** - Dark mode removed, site uses light colors by default
+- ThemeProvider removed from layout.tsx
 - All form components now have 200ms transitions
 - Buttons have 300ms transitions with glow effects
 - Error states use `border-error` consistently

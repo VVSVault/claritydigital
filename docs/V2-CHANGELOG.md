@@ -2,6 +2,35 @@
 
 ## Latest Updates
 
+### January 9, 2026 (Evening) - Light Mode & New Project
+
+**Light-Only Mode:**
+- Switched site from dark-first to light-only mode
+- Updated `globals.css` with light mode colors as default
+- Removed ThemeProvider from layout.tsx
+- Removed `dark` class from html element
+- Updated glass effect for light backgrounds
+- Removed `.light` class section (no longer needed)
+
+**New Portfolio Project - Pink Post Installations:**
+- Added yard sign management platform for real estate professionals
+- Service Type: SaaS Platform
+- Industry: Real Estate Services
+- Featured: Yes (order #4)
+- Images: `pink-posts-lp.png`, `pink-posts-dashboard.png`
+- Uploaded to Sanity CMS and published
+- Features: active installations tracking, order wizard, Calendly integration, invoicing
+
+**Files Updated:**
+- `app/globals.css` - Light mode colors as default
+- `app/layout.tsx` - Removed ThemeProvider and dark class
+- `components/providers/index.ts` - Removed ThemeProvider export
+- `scripts/seed-projects.json` - Added Pink Posts, updated order numbers
+- `public/projects/pink-posts-lp.png` - Landing page screenshot
+- `public/projects/pink-posts-dashboard.png` - Dashboard screenshot
+
+---
+
 ### January 9, 2026 - Contact Form Redesign & Services Overview Fixes
 
 **Contact Form - Complete Redesign:**
