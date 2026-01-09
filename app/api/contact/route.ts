@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     const firstName = validated.fullName.split(' ')[0]
 
     // Send notification email to Tanner
-    await resend.emails.send({
+    const notificationResult = await resend.emails.send({
       from: 'Clarity Digital <noreply@claritydigital.dev>',
       to: process.env.CONTACT_EMAIL || 'tanner@claritydigital.dev',
       subject: `New Lead: ${validated.companyName} - ${projectTypeLabel}`,
@@ -140,8 +140,15 @@ export async function POST(request: Request) {
       `,
     })
 
+    console.log('Notification email result:', notificationResult)
+
+    if (notificationResult.error) {
+      console.error('Failed to send notification email:', notificationResult.error)
+      throw new Error(`Notification email failed: ${notificationResult.error.message}`)
+    }
+
     // Send confirmation email to the lead
-    await resend.emails.send({
+    const confirmationResult = await resend.emails.send({
       from: 'Tanner at Clarity Digital <tanner@claritydigital.dev>',
       to: validated.email,
       subject: "Got it! I'll be in touch soon.",
@@ -199,6 +206,13 @@ export async function POST(request: Request) {
         </div>
       `,
     })
+
+    console.log('Confirmation email result:', confirmationResult)
+
+    if (confirmationResult.error) {
+      console.error('Failed to send confirmation email:', confirmationResult.error)
+      // Don't throw - notification was sent, just log the error
+    }
 
     return NextResponse.json({ success: true })
   } catch (error) {

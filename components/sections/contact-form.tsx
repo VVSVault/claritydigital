@@ -86,11 +86,18 @@ export function ContactForm() {
     'w-full rounded-xl border px-4 py-3',
     'bg-surface text-text-primary placeholder-text-tertiary',
     'transition-all duration-200',
-    'focus:outline-none focus:ring-2 focus:ring-accent/50'
+    'focus:outline-none focus:ring-2'
+  )
+
+  const getInputErrorClasses = (hasError: boolean) => cn(
+    inputClasses,
+    hasError
+      ? 'border-error focus:ring-error/50 focus:border-error'
+      : 'border-border hover:border-border-hover focus:border-accent focus:ring-accent/50'
   )
 
   const labelClasses = 'mb-2 block text-sm font-medium text-text-primary'
-  const errorClasses = 'mt-1 text-sm text-error'
+  const errorClasses = 'mt-2 text-sm text-error font-medium'
   const sectionTitleClasses = 'mb-6 text-sm font-semibold uppercase tracking-wider text-accent'
 
   // Success state
@@ -192,10 +199,7 @@ export function ContactForm() {
               id="fullName"
               type="text"
               placeholder="John Smith"
-              className={cn(
-                inputClasses,
-                errors.fullName ? 'border-error' : 'border-border hover:border-border-hover focus:border-accent'
-              )}
+              className={getInputErrorClasses(!!errors.fullName)}
               {...register('fullName')}
             />
             {errors.fullName && (
@@ -212,10 +216,7 @@ export function ContactForm() {
               id="email"
               type="email"
               placeholder="john@company.com"
-              className={cn(
-                inputClasses,
-                errors.email ? 'border-error' : 'border-border hover:border-border-hover focus:border-accent'
-              )}
+              className={getInputErrorClasses(!!errors.email)}
               {...register('email')}
             />
             {errors.email && (
@@ -249,10 +250,7 @@ export function ContactForm() {
               id="companyName"
               type="text"
               placeholder="Acme Corp"
-              className={cn(
-                inputClasses,
-                errors.companyName ? 'border-error' : 'border-border hover:border-border-hover focus:border-accent'
-              )}
+              className={getInputErrorClasses(!!errors.companyName)}
               {...register('companyName')}
             />
             {errors.companyName && (
@@ -267,11 +265,7 @@ export function ContactForm() {
             </label>
             <select
               id="role"
-              className={cn(
-                inputClasses,
-                'cursor-pointer appearance-none',
-                errors.role ? 'border-error' : 'border-border hover:border-border-hover focus:border-accent'
-              )}
+              className={cn(getInputErrorClasses(!!errors.role), 'cursor-pointer appearance-none')}
               {...register('role')}
             >
               <option value="">Select your role</option>
