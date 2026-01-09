@@ -1,2 +1,2 @@
 export { LenisProvider } from './lenis-provider'
-export { ThemeProvider, useTheme } from './theme-provider'
+// Theme provider removed - site is light-only mode

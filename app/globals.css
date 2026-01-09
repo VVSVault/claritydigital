@@ -2,36 +2,36 @@
 
 /* ═══════════════════════════════════════════════════════════════════════════
    CLARITY DIGITAL v2.0 - DESIGN SYSTEM
-   Dark-first luxury aesthetic with indigo accent
+   Light mode with indigo accent
    ═══════════════════════════════════════════════════════════════════════════ */
 
 @theme {
   /* ─────────────────────────────────────────────────────────────────────────
-     COLOR SYSTEM - DARK MODE PRIMARY
+     COLOR SYSTEM - LIGHT MODE
      ───────────────────────────────────────────────────────────────────────── */
 
   /* Backgrounds */
-  --color-background: #0A0A0B;
-  --color-surface: #141416;
-  --color-surface-elevated: #1C1C1F;
-  --color-surface-hover: #242428;
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F4F4F5;
+  --color-surface-hover: #E4E4E7;
 
   /* Borders */
-  --color-border: #27272A;
-  --color-border-subtle: #1F1F22;
-  --color-border-hover: #3F3F46;
+  --color-border: #E4E4E7;
+  --color-border-subtle: #F4F4F5;
+  --color-border-hover: #D4D4D8;
 
   /* Text */
-  --color-text-primary: #FAFAFA;
-  --color-text-secondary: #A1A1AA;
+  --color-text-primary: #0A0A0B;
+  --color-text-secondary: #52525B;
   --color-text-tertiary: #71717A;
-  --color-text-muted: #52525B;
+  --color-text-muted: #A1A1AA;
 
   /* Accent - Indigo */
-  --color-accent: #6366F1;
-  --color-accent-hover: #818CF8;
-  --color-accent-muted: #4F46E5;
-  --color-accent-glow: oklch(65% 0.25 270 / 0.15);
+  --color-accent: #4F46E5;
+  --color-accent-hover: #6366F1;
+  --color-accent-muted: #6366F1;
+  --color-accent-glow: oklch(55% 0.25 270 / 0.2);
 
   /* Gradient stops */
   --color-gradient-start: #6366F1;
@@ -168,7 +168,7 @@ body {
 
 ::selection {
   background-color: var(--color-accent);
-  color: var(--color-text-primary);
+  color: #FFFFFF;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -238,7 +238,7 @@ body {
 
 /* Glass effect */
 .glass {
-  background: rgba(20, 20, 22, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(var(--blur-xl));
   -webkit-backdrop-filter: blur(var(--blur-xl));
 }
@@ -269,37 +269,6 @@ body {
 /* Remove focus outline for mouse users */
 :focus:not(:focus-visible) {
   outline: none;
-}
-
-/* ═══════════════════════════════════════════════════════════════════════════
-   LIGHT MODE (Secondary)
-   ═══════════════════════════════════════════════════════════════════════════ */
-
-.light {
-  --color-background: #FAFAFA;
-  --color-surface: #FFFFFF;
-  --color-surface-elevated: #F4F4F5;
-  --color-surface-hover: #E4E4E7;
-
-  --color-border: #E4E4E7;
-  --color-border-subtle: #F4F4F5;
-  --color-border-hover: #D4D4D8;
-
-  --color-text-primary: #0A0A0B;
-  --color-text-secondary: #52525B;
-  --color-text-tertiary: #71717A;
-  --color-text-muted: #A1A1AA;
-
-  --color-accent: #4F46E5;
-  --color-accent-hover: #6366F1;
-  --color-accent-muted: #6366F1;
-  --color-accent-glow: oklch(55% 0.25 270 / 0.2);
-}
-
-.light html,
-.light body {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════

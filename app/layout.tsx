@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-import { inter, fontVariables } from './fonts'
-import { LenisProvider, ThemeProvider } from '@/components/providers'
+import { fontVariables } from './fonts'
+import { LenisProvider } from '@/components/providers'
 import { siteConfig } from '@/lib/constants/site'
 import './globals.css'
 
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`dark ${fontVariables}`} suppressHydrationWarning>
+    <html lang="en" className={fontVariables} suppressHydrationWarning>
       <head>
         {/* Satoshi font from Fontshare */}
         <link
@@ -47,13 +47,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen bg-background text-text-primary antialiased">
-        <ThemeProvider defaultTheme="dark">
-          <LenisProvider>
-            {/* Film grain overlay */}
-            <div className="grain" />
-            {children}
-          </LenisProvider>
-        </ThemeProvider>
+        <LenisProvider>
+          {/* Film grain overlay */}
+          <div className="grain" />
+          {children}
+        </LenisProvider>
         <Analytics />
       </body>
     </html>
