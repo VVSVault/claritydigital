@@ -38,7 +38,7 @@ export function BentoGrid({
   }
 
   return (
-    <section ref={targetRef} style={{ height: `${gridProjects.length * 100}vh` }}>
+    <section ref={targetRef} className="mt-16 md:mt-24" style={{ height: `${gridProjects.length * 100}vh` }}>
       {/* Sticky container */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
