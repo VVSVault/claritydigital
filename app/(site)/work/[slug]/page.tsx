@@ -5,6 +5,7 @@ import { CaseStudyHero } from '@/components/work/case-study-hero'
 import { CaseStudyOverview } from '@/components/work/case-study-overview'
 import { CaseStudyContent } from '@/components/work/case-study-content'
 import { CaseStudyResults } from '@/components/work/case-study-results'
+import { CaseStudyGallery } from '@/components/work/case-study-gallery'
 import { CtaBlock } from '@/components/sections/cta-block'
 import { client, isSanityConfigured } from '@/lib/sanity/client'
 import { projectBySlugQuery, projectSlugsQuery } from '@/lib/sanity/queries'
@@ -109,6 +110,10 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </div>
         </Container>
       </section>
+
+      {project.gallery && project.gallery.length > 0 && (
+        <CaseStudyGallery images={project.gallery} title={project.title} />
+      )}
 
       {(project.results || project.testimonial) && (
         <section className="border-y border-border-subtle bg-surface/30 py-16 md:py-24">
