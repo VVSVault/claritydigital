@@ -7,12 +7,12 @@
     "serviceType": "Web Design",
     "industry": "Automotive",
     "featured": true,
-    "order": 1,
+    "order": 2,
     "images": {
       "landing": "bluegrass-precision-lp.png",
       "dashboard": "bluegrass-precision-dashboard.png"
     },
-    "challenge": "Despite offering world-class service with dealer-level diagnostic capabilities, Bluegrass Precision Motorwerks had a website that didn't reflect their premium positioning. The existing site lacked clear service information, had no online booking functionality, poor mobile responsiveness, and minimal SEO presence. For a business serving clients who own six-figure vehicles, the digital experience needed to match the caliber of service they provide in the shop.",
+    "challenge": "Despite offering world-class service with dealer-level diagnostic capabilities, Bluegrass Precision Motorwerks had a website that didn't reflect their premium positioning. The existing site lacked clear service information, had poor mobile responsiveness, and minimal SEO presence. For a business serving clients who own six-figure vehicles, the digital experience needed to match the caliber of service they provide in the shop.",
     "approach": "Designed and built a complete website overhaul focused on three objectives: establishing premium brand positioning, driving appointment bookings, and capturing local search traffic. The new site features a dark, sophisticated design language appropriate for luxury automotive. Integration with Tekmetric provides seamless online appointment booking. Service pages are structured for both user navigation and SEO performance, with individual pages for each brand to capture long-tail search queries.",
     "techStack": ["nextjs", "typescript", "tailwind", "sanity"],
     "completedAt": "2025-12-01"
@@ -25,7 +25,7 @@
     "serviceType": "SaaS Platform",
     "industry": "Real Estate",
     "featured": true,
-    "order": 2,
+    "order": 1,
     "images": {
       "landing": "flipops-lp.png",
       "dashboard": "flipops-dashboard.png"
