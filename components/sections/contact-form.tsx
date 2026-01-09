@@ -37,13 +37,16 @@ export function ContactForm() {
     watch,
     control,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitted },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
       projectDrivers: [],
     },
+    shouldFocusError: true,
   })
+
+  const hasErrors = Object.keys(errors).length > 0
 
   const hasExistingWebsite = watch('hasExistingWebsite')
 
@@ -141,6 +144,31 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-10">
+      {/* Validation Error Summary */}
+      {isSubmitted && hasErrors && (
+        <div className="rounded-xl border border-error/30 bg-error/10 p-4">
+          <div className="flex items-start gap-3">
+            <XCircle className="h-5 w-5 shrink-0 text-error mt-0.5" />
+            <div>
+              <p className="font-medium text-error">Please fix the following errors:</p>
+              <ul className="mt-2 space-y-1 text-sm text-error/80">
+                {errors.fullName && <li>Full Name: {errors.fullName.message}</li>}
+                {errors.email && <li>Email: {errors.email.message}</li>}
+                {errors.companyName && <li>Company Name: {errors.companyName.message}</li>}
+                {errors.role && <li>Role: {errors.role.message}</li>}
+                {errors.industry && <li>Industry: {errors.industry.message}</li>}
+                {errors.projectType && <li>Project Type: {errors.projectType.message}</li>}
+                {errors.hasExistingWebsite && <li>Existing Website: {errors.hasExistingWebsite.message}</li>}
+                {errors.projectDrivers && <li>Project Drivers: {errors.projectDrivers.message}</li>}
+                {errors.timeline && <li>Timeline: {errors.timeline.message}</li>}
+                {errors.budget && <li>Budget: {errors.budget.message}</li>}
+                {errors.projectDescription && <li>Project Description: {errors.projectDescription.message}</li>}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Honeypot field - hidden from users */}
       <input
         type="text"
