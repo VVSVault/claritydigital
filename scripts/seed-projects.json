@@ -54,6 +54,24 @@
     "completedAt": "2025-11-15"
   },
   {
+    "title": "Pink Post Installations",
+    "slug": "pink-post-installations",
+    "excerpt": "Yard sign management for real estate professionals, simplified",
+    "client": "Pink Post Installations",
+    "serviceType": "SaaS Platform",
+    "industry": "Real Estate Services",
+    "featured": true,
+    "order": 4,
+    "images": {
+      "landing": "pink-posts-lp.png",
+      "dashboard": "pink-posts-dashboard.png"
+    },
+    "challenge": "Real estate agents juggle dozens of active listings at any given time. Each listing needs a yard sign installed, often with riders that change as the property status updates. Tracking which signs are where, scheduling installations and removals, and managing the back-and-forth with sign installation services typically happens through text messages, phone calls, and mental notes. The client saw an opportunity to build a service that handled all of this through a proper system.",
+    "approach": "Built a complete web application with two main components: a marketing landing page to convert visitors into customers, and a full-featured dashboard for managing sign installations. The dashboard includes active installations tracking, product catalogs for posts, riders, and lockboxes, a multi-step order wizard with Calendly integration, complete order history, and itemized invoicing. The pink color palette stands out in an industry full of blue and red branding.",
+    "techStack": ["nextjs", "typescript", "tailwind", "postgresql"],
+    "completedAt": "2025-12-15"
+  },
+  {
     "title": "Recovery Plus",
     "slug": "recovery-plus",
     "excerpt": "Science-based recovery with data-driven personalization",
@@ -61,7 +79,7 @@
     "serviceType": "SaaS Platform",
     "industry": "Wellness",
     "featured": true,
-    "order": 4,
+    "order": 5,
     "images": {
       "landing": "recovery-plus-lp.png",
       "dashboard": "recovery-plus-dashboard.png"
@@ -79,7 +97,7 @@
     "serviceType": "E-Commerce",
     "industry": "Luxury Retail",
     "featured": true,
-    "order": 5,
+    "order": 6,
     "images": {
       "landing": "lim-carlson-lp.png",
       "dashboard": "lim-carlson-dashboard.png"
@@ -97,7 +115,7 @@
     "serviceType": "E-Commerce",
     "industry": "Tobacco Retail",
     "featured": false,
-    "order": 6,
+    "order": 7,
     "images": {
       "landing": "kentucky-gentlemen-lp.png",
       "dashboard": "kentucky-gentlemen-dashboard.png"
@@ -115,7 +133,7 @@
     "serviceType": "SaaS Platform",
     "industry": "AI Technology",
     "featured": false,
-    "order": 7,
+    "order": 8,
     "images": {
       "landing": "caid-lp.png",
       "dashboard": null
@@ -133,7 +151,7 @@
     "serviceType": "SaaS Platform",
     "industry": "AI Technology",
     "featured": false,
-    "order": 8,
+    "order": 9,
     "images": {
       "landing": "infinet-lp.png",
       "dashboard": "infinet-dashboard.png"
