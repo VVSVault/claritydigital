@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Bluegrass Precision Motorwerks",
+    "slug": "bluegrass-precision-motorwerks",
+    "excerpt": "Premier European and exotic vehicle service, now with a digital presence to match",
+    "client": "Bluegrass Precision Motorwerks",
+    "serviceType": "Web Design",
+    "industry": "Automotive",
+    "featured": true,
+    "order": 1,
+    "images": {
+      "landing": "bluegrass-precision-lp.png",
+      "dashboard": "bluegrass-precision-dashboard.png"
+    },
+    "challenge": "Despite offering world-class service with dealer-level diagnostic capabilities, Bluegrass Precision Motorwerks had a website that didn't reflect their premium positioning. The existing site lacked clear service information, had no online booking functionality, poor mobile responsiveness, and minimal SEO presence. For a business serving clients who own six-figure vehicles, the digital experience needed to match the caliber of service they provide in the shop.",
+    "approach": "Designed and built a complete website overhaul focused on three objectives: establishing premium brand positioning, driving appointment bookings, and capturing local search traffic. The new site features a dark, sophisticated design language appropriate for luxury automotive. Integration with Tekmetric provides seamless online appointment booking. Service pages are structured for both user navigation and SEO performance, with individual pages for each brand to capture long-tail search queries.",
+    "techStack": ["nextjs", "typescript", "tailwind", "sanity"],
+    "completedAt": "2025-12-01"
+  },
+  {
+    "title": "FlipOps",
+    "slug": "flipops",
+    "excerpt": "Real estate deal management from discovery to close",
+    "client": "FlipOps",
+    "serviceType": "SaaS Platform",
+    "industry": "Real Estate",
+    "featured": true,
+    "order": 2,
+    "images": {
+      "landing": "flipops-lp.png",
+      "dashboard": "flipops-dashboard.png"
+    },
+    "challenge": "Real estate investors face a steep learning curve managing their operations. Finding distressed properties requires hours of manual research. Skip tracing owner contact information means bouncing between multiple services. Tracking leads, contracts, buyers, and deals typically involves a patchwork of spreadsheets, CRMs that weren't built for real estate, and sticky notes. Experienced investors waste time on administrative work that could be spent closing deals.",
+    "approach": "Built a comprehensive platform that consolidates the entire investment workflow into a single system. The platform automates lead discovery by pulling distressed property data directly into the dashboard. One-click skip tracing retrieves owner contact information through integrated third-party data services. A proprietary distress scoring algorithm helps investors quickly identify which properties are worth pursuing. Includes full pipeline management with customizable deal stages, buyer database management, and contract tracking.",
+    "techStack": ["nextjs", "react", "typescript", "tailwind", "postgresql", "supabase"],
+    "completedAt": "2026-01-01"
+  },
+  {
+    "title": "SoldByYou",
+    "slug": "sold-by-you",
+    "excerpt": "For-sale-by-owner made simple, from listing to closing",
+    "client": "SoldByYou",
+    "serviceType": "Web Development",
+    "industry": "Real Estate",
+    "featured": true,
+    "order": 3,
+    "images": {
+      "landing": "sold-by-you-lp.png",
+      "dashboard": "sold-by-you-dashboard.png"
+    },
+    "challenge": "The SoldByYou founder had invested nearly $250,000 with a previous development team building the platform. Despite this significant investment, key functionality remained incomplete, timelines kept slipping, and invoices continued to climb. The buyer portal, which would allow potential home buyers to search properties, save favorites, submit offers, and track transactions, was still not delivered.",
+    "approach": "Contracted to build the buyer portal that would complete the platform. The portal allows prospective buyers to browse SoldByYou listings, save properties, submit offers directly through the platform, and track transaction status from offer through closing. The interface mirrors the simplicity of the seller experience, removing friction from the purchasing process without requiring a traditional buyer's agent.",
+    "techStack": ["nextjs", "typescript", "tailwind", "postgresql"],
+    "completedAt": "2025-11-15"
+  },
+  {
+    "title": "Recovery Plus",
+    "slug": "recovery-plus",
+    "excerpt": "Science-based recovery with data-driven personalization",
+    "client": "Recovery Plus",
+    "serviceType": "SaaS Platform",
+    "industry": "Wellness",
+    "featured": true,
+    "order": 4,
+    "images": {
+      "landing": "recovery-plus-lp.png",
+      "dashboard": "recovery-plus-dashboard.png"
+    },
+    "challenge": "Recovery Plus had an existing website built on a templated platform that created friction at every step. Navigation was confusing, booking a session required too many clicks, and there was no system in place to track client progress over time. Coaches had no centralized way to view client histories, monitor improvements, or make informed recommendations about which modalities or session types would benefit each individual. For a business built around personalized recovery guidance, the digital experience was completely disconnected from the service experience.",
+    "approach": "I delivered a complete platform redesign that transformed Recovery Plus from a templated site into a comprehensive client management and engagement system. The public-facing website was rebuilt for conversion with streamlined booking. The real transformation happened behind the login—I built customized client dashboards where members can track recovery progress, view session history, and connect wearable devices. For coaches, I created a dedicated dashboard that fundamentally changes how they interact with their client base, with full client profiles, session history, health markers from wearables, and data-driven recommendations.",
+    "techStack": ["nextjs", "typescript", "tailwind", "postgresql", "supabase"],
+    "completedAt": "2025-11-01"
+  },
+  {
+    "title": "Lim & Carlson",
+    "slug": "lim-carlson",
+    "excerpt": "Making exceptional colored gemstones accessible to everyone",
+    "client": "Lim & Carlson",
+    "serviceType": "E-Commerce",
+    "industry": "Luxury Retail",
+    "featured": true,
+    "order": 5,
+    "images": {
+      "landing": "lim-carlson-lp.png",
+      "dashboard": "lim-carlson-dashboard.png"
+    },
+    "challenge": "The colored gemstone market operates differently from diamonds. While diamonds have established grading systems and retail channels, colored gemstones exist in a more opaque market. Exceptional sapphires, emeralds, rubies, and rarer stones are frequently traded through dealer networks or high-end auction houses that average consumers never encounter. The mission was to democratize access to quality colored gemstones without requiring industry connections.",
+    "approach": "Built a marketplace platform that supports both vendor sales and direct inventory. Qualified vendors can sign up, list their inventory, and reach customers they might not otherwise access. Product pages include detailed information gemstone buyers expect: origin, treatment status, measurements, certification, and high-quality imagery showing true color and characteristics. The design borrows from luxury auction house aesthetics while remaining approachable.",
+    "techStack": ["nextjs", "react", "typescript", "tailwind", "sanity", "stripe"],
+    "completedAt": "2025-09-30"
+  },
+  {
+    "title": "Kentucky Gentlemen Cigars",
+    "slug": "kentucky-gentlemen-cigars",
+    "excerpt": "Kentucky heritage, hand-rolled craftsmanship, modern e-commerce",
+    "client": "Kentucky Gentlemen Cigars",
+    "serviceType": "E-Commerce",
+    "industry": "Tobacco Retail",
+    "featured": false,
+    "order": 6,
+    "images": {
+      "landing": "kentucky-gentlemen-lp.png",
+      "dashboard": "kentucky-gentlemen-dashboard.png"
+    },
+    "challenge": "The existing Kentucky Gentlemen website was outdated and didn't effectively showcase the unique story and craftsmanship behind their products. The e-commerce experience made it difficult for customers to discover cigars that matched their preferences. For a company with such a distinctive product line and compelling family history dating back to 2005, the digital storefront needed to do more than just list products.",
+    "approach": "Delivered a complete modern redesign focused on storytelling and product discovery. The site leads with the Kentucky Gentlemen story, highlighting their unique position as one of the few American cigar manufacturers. The centerpiece is a sophisticated cigar filtering system—customers can browse by tasting notes, boldness level, flavor profile, and ideal pairings. This transforms shopping from scrolling through a list to a guided discovery process.",
+    "techStack": ["nextjs", "typescript", "tailwind", "stripe", "sanity"],
+    "completedAt": "2025-08-15"
+  },
+  {
+    "title": "CAID",
+    "slug": "caid",
+    "excerpt": "Custom jewelry design through conversation, not CAD training",
+    "client": "CAID",
+    "serviceType": "SaaS Platform",
+    "industry": "AI Technology",
+    "featured": false,
+    "order": 7,
+    "images": {
+      "landing": "caid-lp.png",
+      "dashboard": null
+    },
+    "challenge": "Custom jewelry design has historically been slow and expensive. When a customer wants a custom piece, the typical workflow involves taking notes, sending specifications to a CAD designer, waiting days for renders, going through revision cycles, and only then moving to production. Software solutions like Countersketch exist, but require significant training and technical CAD knowledge. This creates a barrier for smaller jewelry stores.",
+    "approach": "Built a conversational AI platform that allows jewelers to describe what they want in plain English. A jeweler could type something like 'a solitaire engagement ring with a 1.5 carat oval diamond, cathedral setting, with pave diamonds down the band' and receive a renderable CAD model in response. The system was designed to work in real-time during customer consultations, enabling jewelers to iterate on designs while the customer was in the store.",
+    "techStack": ["nextjs", "typescript", "tailwind", "framer", "openai"],
+    "completedAt": "2025-12-20"
+  },
+  {
+    "title": "Infinet",
+    "slug": "infinet",
+    "excerpt": "Intelligence without interference",
+    "client": "Infinet",
+    "serviceType": "SaaS Platform",
+    "industry": "AI Technology",
+    "featured": false,
+    "order": 8,
+    "images": {
+      "landing": "infinet-lp.png",
+      "dashboard": "infinet-dashboard.png"
+    },
+    "challenge": "As large language models became mainstream, most platforms handled controversial, sensitive, or complex topics with heavy restrictions. Legitimate requests with valid use cases would be refused outright. Questions that deserved direct answers received paragraphs of caveats. Medical professionals couldn't get specific clinical information. Security researchers couldn't discuss vulnerabilities. The AI was optimized for PR safety rather than user utility.",
+    "approach": "Built a conversational AI platform around the principle of providing genuine, unfiltered information access. The system leverages open-source models including Llama and Venice that allow for customization of content policies. Users can ask hard questions and receive honest engagement rather than reflexive refusals. Privacy is core—conversations aren't logged or used for training. The interface is intentionally minimal, removing distractions and letting users focus on their interaction with the AI.",
+    "techStack": ["nextjs", "typescript", "tailwind", "openai"],
+    "completedAt": "2025-10-20"
+  }
+]

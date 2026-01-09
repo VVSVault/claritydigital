@@ -1,0 +1,50 @@
+{
+  "name": "clarity-digital",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "upload-projects": "tsx scripts/upload-projects.ts",
+    "update-descriptions": "tsx scripts/update-project-descriptions.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@portabletext/react": "^3.1.0",
+    "@sanity/client": "^6.21.0",
+    "@sanity/image-url": "^1.0.2",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.12.29",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@vercel/analytics": "^1.3.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.5.0",
+    "gsap": "^3.14.2",
+    "lenis": "^1.3.17",
+    "lucide-react": "^0.439.0",
+    "next": "^14.2.8",
+    "next-sanity": "^9.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
+    "react-is": "^19.2.3",
+    "resend": "^4.0.0",
+    "sanity": "^3.57.0",
+    "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^17.2.3",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^4.1.18",
+    "tsx": "^4.21.0",
+    "typescript": "^5.5.4"
+  }
+}
