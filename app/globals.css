@@ -413,6 +413,17 @@ body {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
+
+  /* Safari-specific: Add extra spacing before sticky sections */
+  .section-spacer {
+    height: 6rem !important;
+  }
+
+  @media (min-width: 768px) {
+    .section-spacer {
+      height: 8rem !important;
+    }
+  }
 }
 
 /* Section spacing that works with Safari sticky elements */
