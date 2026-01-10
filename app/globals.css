@@ -401,3 +401,28 @@ body {
 .pause-on-hover:hover {
   animation-play-state: paused;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SAFARI FIXES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Safari needs explicit height on sticky parents */
+@supports (-webkit-touch-callout: none) {
+  /* Fix for Safari sticky positioning */
+  .sticky {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Section spacing that works with Safari sticky elements */
+.section-spacer {
+  display: block;
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacer {
+    height: 6rem;
+  }
+}

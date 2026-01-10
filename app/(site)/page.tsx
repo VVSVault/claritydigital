@@ -32,6 +32,9 @@ export default async function HomePage() {
       {/* Section 2: Stats Strip */}
       <StatsStrip />
 
+      {/* Spacer for Safari compatibility */}
+      <div className="section-spacer" aria-hidden="true" />
+
       {/* Section 3: Selected Work bento grid */}
       <BentoGrid
         title="Selected Work"
