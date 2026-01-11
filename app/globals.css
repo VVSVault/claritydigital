@@ -424,6 +424,11 @@ body {
       height: 8rem !important;
     }
   }
+
+  /* Safari mobile: Use svh for proper viewport height */
+  .h-screen {
+    height: 100svh !important;
+  }
 }
 
 /* Section spacing that works with Safari sticky elements */
