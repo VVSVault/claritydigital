@@ -41,7 +41,7 @@ export function BentoGrid({
     <section ref={targetRef} style={{ height: `${gridProjects.length * 100}vh` }}>
       {/* Sticky container */}
       <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-start justify-center pt-8 md:items-center md:pt-0">
           <Container>
             {/* Header */}
             <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between">
@@ -67,7 +67,7 @@ export function BentoGrid({
             </div>
 
             {/* Scrolling cards */}
-            <div className="relative mx-auto h-[600px] max-w-5xl">
+            <div className="relative mx-auto h-[450px] max-w-5xl md:h-[600px]">
               {gridProjects.map((project, index) => (
                 <ScrollCard
                   key={project._id}

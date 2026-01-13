@@ -406,28 +406,11 @@ body {
    SAFARI FIXES
    ═══════════════════════════════════════════════════════════════════════════ */
 
-/* Safari needs explicit height on sticky parents */
+/* Safari sticky positioning fix */
 @supports (-webkit-touch-callout: none) {
-  /* Fix for Safari sticky positioning */
   .sticky {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-  }
-
-  /* Safari-specific: Add extra spacing before sticky sections */
-  .section-spacer {
-    height: 6rem !important;
-  }
-
-  @media (min-width: 768px) {
-    .section-spacer {
-      height: 8rem !important;
-    }
-  }
-
-  /* Safari mobile: Use svh for proper viewport height */
-  .h-screen {
-    height: 100svh !important;
   }
 }
 
