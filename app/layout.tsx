@@ -50,7 +50,7 @@ export default function RootLayout({
       <head>
         {/* Google Analytics - delayed load for better performance */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-SW7V1L62C7"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EZC806Y56K"
           strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="lazyOnload">
@@ -58,7 +58,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-SW7V1L62C7');
+            gtag('config', 'G-EZC806Y56K');
           `}
         </Script>
       </head>
