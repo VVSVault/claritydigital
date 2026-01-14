@@ -1,14 +1,32 @@
+import dynamic from 'next/dynamic'
 import { Hero } from '@/components/sections/hero'
 import { StatsStrip } from '@/components/sections/stats-strip'
-import { ServicesOverview } from '@/components/sections/services-overview'
 import { BentoGrid } from '@/components/sections/bento-grid'
-import { ImpactStats } from '@/components/sections/impact-stats'
-import { ProcessTeaser } from '@/components/sections/process-teaser'
-import { TestimonialSingle } from '@/components/sections/testimonial-single'
-import { MegaCta } from '@/components/sections/mega-cta'
 import { client, isSanityConfigured } from '@/lib/sanity/client'
 import { featuredProjectsQuery } from '@/lib/sanity/queries'
 import type { Project } from '@/types'
+
+// Lazy load below-the-fold sections to reduce initial JS bundle
+const ServicesOverview = dynamic(
+  () => import('@/components/sections/services-overview').then(mod => mod.ServicesOverview),
+  { ssr: true }
+)
+const ImpactStats = dynamic(
+  () => import('@/components/sections/impact-stats').then(mod => mod.ImpactStats),
+  { ssr: true }
+)
+const ProcessTeaser = dynamic(
+  () => import('@/components/sections/process-teaser').then(mod => mod.ProcessTeaser),
+  { ssr: true }
+)
+const TestimonialSingle = dynamic(
+  () => import('@/components/sections/testimonial-single').then(mod => mod.TestimonialSingle),
+  { ssr: true }
+)
+const MegaCta = dynamic(
+  () => import('@/components/sections/mega-cta').then(mod => mod.MegaCta),
+  { ssr: true }
+)
 
 export const revalidate = 60
 
