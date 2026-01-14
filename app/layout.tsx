@@ -61,14 +61,6 @@ export default function RootLayout({
             gtag('config', 'G-SW7V1L62C7');
           `}
         </Script>
-        {/* Preconnect for fonts - must be before stylesheet */}
-        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
-        {/* Satoshi font from Fontshare */}
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
-        />
       </head>
       <body className="min-h-screen bg-background text-text-primary antialiased">
         <LenisProvider>
