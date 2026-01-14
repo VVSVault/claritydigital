@@ -48,12 +48,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <head>
-        {/* Google Analytics */}
+        {/* Google Analytics - delayed load for better performance */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SW7V1L62C7"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
