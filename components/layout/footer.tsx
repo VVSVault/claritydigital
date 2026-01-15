@@ -113,35 +113,37 @@ export function Footer() {
               </ul>
             </motion.div>
 
-            {/* Connect */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
-                Connect
-              </h4>
-              <ul className="space-y-3">
-                {footerNavigation.connect.map((item) => (
-                  <li key={item.href}>
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={cn(
-                        'group inline-flex items-center gap-1.5',
-                        'text-text-secondary hover:text-accent',
-                        'transition-colors duration-300'
-                      )}
-                    >
-                      {item.title}
-                      <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+            {/* Connect - only shown when social links are configured */}
+            {footerNavigation.connect.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+                  Connect
+                </h4>
+                <ul className="space-y-3">
+                  {footerNavigation.connect.map((item) => (
+                    <li key={item.href}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn(
+                          'group inline-flex items-center gap-1.5',
+                          'text-text-secondary hover:text-accent',
+                          'transition-colors duration-300'
+                        )}
+                      >
+                        {item.title}
+                        <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
           </div>
         </div>
 
