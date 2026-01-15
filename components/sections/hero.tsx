@@ -85,7 +85,7 @@ export function Hero({
               type="word"
               delay={200}
               stagger={80}
-              className="font-display text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.1] tracking-tight text-text-primary"
+              className="font-display text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.15] tracking-tight text-text-primary"
               as="h1"
             />
 

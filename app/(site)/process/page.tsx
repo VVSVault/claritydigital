@@ -4,8 +4,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { MessageSquare, Search, Palette, Code, Rocket, HeartHandshake } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Process',
-  description: 'Our proven process for delivering exceptional web design and development projects.',
+  title: 'Our Web Development Process',
+  description: 'From discovery to launch, see how we build custom websites and SaaS platforms. A proven process focused on communication, quality, and your business goals.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/process',
+  },
+  openGraph: {
+    title: 'Our Web Development Process | Clarity Digital',
+    description: 'From discovery to launch, see how we build custom websites and SaaS platforms. A proven process focused on communication, quality, and your business goals.',
+    url: 'https://claritydigital.dev/process',
+  },
 }
 
 const processSteps = [

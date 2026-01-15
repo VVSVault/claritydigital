@@ -6,8 +6,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Home, Heart, Camera, Gem, Store, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Industries',
-  description: 'Specialized web solutions for real estate, wellness, photography, jewelry, and retail businesses.',
+  title: 'Web Development by Industry',
+  description: 'Industry-focused web development and SaaS solutions. Specialized websites for real estate, wellness, photography, jewelry, and retail businesses.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries',
+  },
+  openGraph: {
+    title: 'Web Development by Industry | Clarity Digital',
+    description: 'Industry-focused web development and SaaS solutions. Specialized websites for real estate, wellness, photography, jewelry, and retail businesses.',
+    url: 'https://claritydigital.dev/industries',
+  },
 }
 
 const industries = [

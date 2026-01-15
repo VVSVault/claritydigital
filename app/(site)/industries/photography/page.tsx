@@ -5,8 +5,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Camera, Image, Zap, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Photography',
-  description: 'Portfolio websites for photographers that showcase work and drive bookings.',
+  title: 'Photography Website Development',
+  description: 'Custom portfolio websites for photographers. Wedding, portrait, and commercial photography sites with galleries, booking systems, and client proofing built in.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries/photography',
+  },
+  openGraph: {
+    title: 'Photography Website Development | Clarity Digital',
+    description: 'Custom portfolio websites for photographers. Wedding, portrait, and commercial photography sites with galleries, booking systems, and client proofing built in.',
+    url: 'https://claritydigital.dev/industries/photography',
+  },
 }
 
 const challenges = [

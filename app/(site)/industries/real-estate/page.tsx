@@ -5,8 +5,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Home, TrendingUp, Users, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Real Estate',
-  description: 'Web solutions for real estate agents, investors, and property companies.',
+  title: 'Real Estate Web Development',
+  description: 'Custom websites and software for real estate professionals. Investor tools, agent sites, IDX integration, and lead generation platforms built for your market.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries/real-estate',
+  },
+  openGraph: {
+    title: 'Real Estate Web Development | Clarity Digital',
+    description: 'Custom websites and software for real estate professionals. Investor tools, agent sites, IDX integration, and lead generation platforms built for your market.',
+    url: 'https://claritydigital.dev/industries/real-estate',
+  },
 }
 
 const challenges = [

@@ -5,8 +5,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Heart, Calendar, Star, Shield } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Wellness & Med Spa',
-  description: 'Web solutions for wellness centers, med spas, and health practitioners.',
+  title: 'Wellness & Fitness Website Development',
+  description: 'Custom websites and apps for wellness businesses. Gyms, personal trainers, spas, and health coaches—we build digital experiences that convert and retain clients.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries/wellness',
+  },
+  openGraph: {
+    title: 'Wellness & Fitness Website Development | Clarity Digital',
+    description: 'Custom websites and apps for wellness businesses. Gyms, personal trainers, spas, and health coaches—we build digital experiences that convert and retain clients.',
+    url: 'https://claritydigital.dev/industries/wellness',
+  },
 }
 
 const challenges = [

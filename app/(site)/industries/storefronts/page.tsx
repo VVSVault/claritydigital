@@ -5,8 +5,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Store, MapPin, ShoppingCart, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Storefronts',
-  description: 'Local business websites that drive foot traffic and online sales.',
+  title: 'Retail & Storefront Website Development',
+  description: 'Custom websites for retail stores and local businesses. Ecommerce integration, local SEO, and online presence that drives foot traffic and online sales.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries/storefronts',
+  },
+  openGraph: {
+    title: 'Retail & Storefront Website Development | Clarity Digital',
+    description: 'Custom websites for retail stores and local businesses. Ecommerce integration, local SEO, and online presence that drives foot traffic and online sales.',
+    url: 'https://claritydigital.dev/industries/storefronts',
+  },
 }
 
 const challenges = [

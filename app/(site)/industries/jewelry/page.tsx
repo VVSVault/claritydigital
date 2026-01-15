@@ -5,8 +5,16 @@ import { CtaBlock } from '@/components/sections/cta-block'
 import { Gem, ShoppingBag, Sparkles, Shield } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Jewelry & Luxury',
-  description: 'E-commerce and brand experiences for jewelry and luxury retail businesses.',
+  title: 'Jewelry Website Development',
+  description: 'Custom websites for jewelers and jewelry brands. Ecommerce, product showcases, and luxury brand experiences that highlight craftsmanship and quality.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/industries/jewelry',
+  },
+  openGraph: {
+    title: 'Jewelry Website Development | Clarity Digital',
+    description: 'Custom websites for jewelers and jewelry brands. Ecommerce, product showcases, and luxury brand experiences that highlight craftsmanship and quality.',
+    url: 'https://claritydigital.dev/industries/jewelry',
+  },
 }
 
 const challenges = [
