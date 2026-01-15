@@ -102,7 +102,7 @@ export function TextReveal({
   return (
     <motion.div
       ref={ref}
-      className={cn('overflow-hidden', className)}
+      className={className}
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
