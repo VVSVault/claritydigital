@@ -9,8 +9,8 @@ export const siteConfig = {
 }
 
 export const defaultHero = {
-  headline: 'Custom Web Development for Startups & Small Businesses',
-  subheadline: 'Your website should be your best salesperson. We make that happen.',
+  headline: 'Your website should be your best salesperson.',
+  subheadline: 'We make that happen.',
   primaryCta: {
     text: 'Start a Project',
     href: '/contact',
