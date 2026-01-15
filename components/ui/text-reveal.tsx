@@ -111,7 +111,7 @@ export function TextReveal({
     >
       <Tag className="flex flex-wrap">
         {items.map((item, index) => (
-          <span key={index} className="overflow-hidden" style={{ perspective: '1000px' }}>
+          <span key={index} className="overflow-hidden pb-[0.15em]" style={{ perspective: '1000px' }}>
             <motion.span
               className={cn('inline-block', itemClassName)}
               variants={activeVariants}
