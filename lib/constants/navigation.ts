@@ -35,9 +35,11 @@ export const footerNavigation = {
     { title: 'SaaS', href: '/services#saas' },
     { title: 'SEO', href: '/services#seo' },
   ],
+  // Social links - uncomment and update with real profile URLs when available
+  // Placeholder links (e.g., github.com without a username) are a negative SEO signal
   connect: [
-    { title: 'GitHub', href: 'https://github.com' },
-    { title: 'LinkedIn', href: 'https://linkedin.com' },
-    { title: 'Twitter', href: 'https://twitter.com' },
+    // { title: 'GitHub', href: 'https://github.com/claritydigital' },
+    // { title: 'LinkedIn', href: 'https://linkedin.com/company/claritydigital' },
+    // { title: 'Twitter', href: 'https://twitter.com/claritydigital' },
   ],
 }

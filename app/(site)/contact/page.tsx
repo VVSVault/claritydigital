@@ -6,8 +6,16 @@ import { Mail, MapPin, Calendar, Clock, ArrowUpRight } from 'lucide-react'
 import { siteConfig } from '@/lib/constants/site'
 
 export const metadata: Metadata = {
-  title: 'Contact | Clarity Digital',
-  description: 'Start a project with Clarity Digital. Tell me about your business and what you are looking to build.',
+  title: 'Contact | Start Your Project',
+  description: 'Ready to build something great? Contact Clarity Digital to discuss your web development or SaaS project. Free discovery call.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/contact',
+  },
+  openGraph: {
+    title: 'Contact | Start Your Project | Clarity Digital',
+    description: 'Ready to build something great? Contact Clarity Digital to discuss your web development or SaaS project. Free discovery call.',
+    url: 'https://claritydigital.dev/contact',
+  },
 }
 
 export default function ContactPage() {

@@ -5,8 +5,16 @@ import { ServiceFaq } from '@/components/services/service-faq'
 import { CtaBlock } from '@/components/sections/cta-block'
 
 export const metadata: Metadata = {
-  title: 'Web Design',
-  description: 'Conversion-focused website design that turns visitors into customers. Every layout decision, color choice, and interaction is intentional.',
+  title: 'Custom Website Design Services',
+  description: 'Custom website design that captures your brand and converts visitors into customers. Modern, responsive designs for startups and small businesses.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/services/web-design',
+  },
+  openGraph: {
+    title: 'Custom Website Design Services | Clarity Digital',
+    description: 'Custom website design that captures your brand and converts visitors into customers. Modern, responsive designs for startups and small businesses.',
+    url: 'https://claritydigital.dev/services/web-design',
+  },
 }
 
 const businessImpact = `A website is not a digital brochure. It is a 24/7 salesperson, a first impression machine, and often the deciding factor in whether someone chooses you or your competitor. The difference between a website that generates leads and one that just exists comes down to design decisions that most business owners never think about.

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Hero } from '@/components/sections/hero'
 import { StatsStrip } from '@/components/sections/stats-strip'
@@ -5,6 +6,19 @@ import { BentoGrid } from '@/components/sections/bento-grid'
 import { client, isSanityConfigured } from '@/lib/sanity/client'
 import { featuredProjectsQuery } from '@/lib/sanity/queries'
 import type { Project } from '@/types'
+
+export const metadata: Metadata = {
+  title: 'Custom Web Development for Startups',
+  description: 'Clarity Digital builds custom websites, web applications, and SaaS platforms for startups and small businesses. From design to development to launch.',
+  alternates: {
+    canonical: 'https://claritydigital.dev',
+  },
+  openGraph: {
+    title: 'Custom Web Development for Startups | Clarity Digital',
+    description: 'Clarity Digital builds custom websites, web applications, and SaaS platforms for startups and small businesses. From design to development to launch.',
+    url: 'https://claritydigital.dev',
+  },
+}
 
 // Lazy load below-the-fold sections to reduce initial JS bundle
 const ServicesOverview = dynamic(

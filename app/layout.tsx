@@ -4,21 +4,32 @@ import { Analytics } from '@vercel/analytics/react'
 import { fontVariables } from './fonts'
 import { LenisProvider } from '@/components/providers'
 import { siteConfig } from '@/lib/constants/site'
+import { OrganizationSchema, WebsiteSchema, ServiceSchema, LocalBusinessSchema } from '@/components/structured-data'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  title: {
+    default: 'Clarity Digital | Custom Web Development & SaaS Solutions',
+    template: '%s | Clarity Digital',
+  },
+  description: 'Clarity Digital builds high-performance websites and custom SaaS platforms for startups and small businesses. Modern development with Next.js, React, and scalable architecture.',
+  keywords: ['web development', 'saas development', 'custom software', 'startup website', 'small business web design', 'web development company usa', 'lexington web developer'],
+  authors: [{ name: 'Clarity Digital' }],
+  creator: 'Clarity Digital',
+  publisher: 'Clarity Digital',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
     type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    siteName: 'Clarity Digital',
+    title: 'Clarity Digital | Custom Web Development & SaaS Solutions',
+    description: 'We build high-performance websites and custom SaaS platforms for startups and small businesses.',
     images: [
       {
         url: '/og-image.png',
@@ -30,13 +41,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: 'Clarity Digital | Custom Web Development & SaaS Solutions',
+    description: 'We build high-performance websites and custom SaaS platforms for startups and small businesses.',
     images: ['/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
@@ -63,6 +81,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="min-h-screen bg-background text-text-primary antialiased">
+        <OrganizationSchema />
+        <WebsiteSchema />
+        <ServiceSchema />
+        <LocalBusinessSchema />
         <LenisProvider>
           {/* Film grain overlay */}
           <div className="grain" />

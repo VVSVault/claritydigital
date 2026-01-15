@@ -5,8 +5,16 @@ import { ServiceFaq } from '@/components/services/service-faq'
 import { CtaBlock } from '@/components/sections/cta-block'
 
 export const metadata: Metadata = {
-  title: 'SEO Solutions',
-  description: 'Technical SEO, content strategy, and ongoing optimization to improve your search rankings and organic traffic.',
+  title: 'SEO Services for Small Business',
+  description: 'SEO that drives qualified traffic to your business. Technical optimization, keyword strategy, and ongoing performance monitoring for small businesses.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/services/seo',
+  },
+  openGraph: {
+    title: 'SEO Services for Small Business | Clarity Digital',
+    description: 'SEO that drives qualified traffic to your business. Technical optimization, keyword strategy, and ongoing performance monitoring.',
+    url: 'https://claritydigital.dev/services/seo',
+  },
 }
 
 const businessImpact = `Over half of all website traffic comes from organic search. When someone searches for what you offer, you either appear in the results or your competitors do. SEO is the work that determines which side of that equation you land on.

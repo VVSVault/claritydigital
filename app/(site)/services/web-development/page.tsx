@@ -5,8 +5,16 @@ import { ServiceFaq } from '@/components/services/service-faq'
 import { CtaBlock } from '@/components/sections/cta-block'
 
 export const metadata: Metadata = {
-  title: 'Web Development',
-  description: 'Modern development that prioritizes performance, maintainability, and your ability to grow. Built right the first time so you are not rebuilding in two years.',
+  title: 'Custom Web Development Company USA',
+  description: 'Custom web development built for performance and scale. Fast, modern websites and web applications using Next.js and React. Serving clients nationwide.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/services/web-development',
+  },
+  openGraph: {
+    title: 'Custom Web Development Company USA | Clarity Digital',
+    description: 'Custom web development built for performance and scale. Fast, modern websites and web applications using Next.js and React.',
+    url: 'https://claritydigital.dev/services/web-development',
+  },
 }
 
 const businessImpact = `Development is the foundation your website sits on. Design gets the attention, but development determines whether your site loads in one second or five, whether it shows up in search results or gets buried, whether you can add features next year or need to start over.

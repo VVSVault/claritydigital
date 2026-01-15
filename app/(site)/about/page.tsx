@@ -4,8 +4,16 @@ import { Container } from '@/components/ui/container'
 import { MegaCta } from '@/components/sections/mega-cta'
 
 export const metadata: Metadata = {
-  title: 'About | Clarity Digital',
-  description: 'Learn about Tanner Carlson and the research-driven approach behind Clarity Digital Services.',
+  title: 'About | Web Development Agency',
+  description: 'Clarity Digital is a web development agency specializing in custom websites and SaaS platforms for startups and small businesses. Based in Lexington, KY.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/about',
+  },
+  openGraph: {
+    title: 'About | Web Development Agency | Clarity Digital',
+    description: 'Clarity Digital is a web development agency specializing in custom websites and SaaS platforms for startups and small businesses. Based in Lexington, KY.',
+    url: 'https://claritydigital.dev/about',
+  },
 }
 
 const techStack = {

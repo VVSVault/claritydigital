@@ -5,8 +5,16 @@ import { ServiceFaq } from '@/components/services/service-faq'
 import { CtaBlock } from '@/components/sections/cta-block'
 
 export const metadata: Metadata = {
-  title: 'SaaS Creation',
-  description: 'Full-service development for software-as-a-service products. From idea and architecture through launch and iteration.',
+  title: 'SaaS Development Company',
+  description: 'We build custom SaaS platforms from concept to launch. User authentication, dashboards, billing integration, and scalable infrastructure. See our portfolio.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/services/saas-creation',
+  },
+  openGraph: {
+    title: 'SaaS Development Company | Clarity Digital',
+    description: 'We build custom SaaS platforms from concept to launch. User authentication, dashboards, billing integration, and scalable infrastructure.',
+    url: 'https://claritydigital.dev/services/saas-creation',
+  },
 }
 
 const businessImpact = `A SaaS product is not a website with a login page. It is a software application that solves a specific problem for a specific audience, delivered through the browser instead of installed on a computer. Building one requires different thinking than building a website.

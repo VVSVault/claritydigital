@@ -8,8 +8,16 @@ import { allServicesQuery } from '@/lib/sanity/queries'
 import type { Service } from '@/types'
 
 export const metadata: Metadata = {
-  title: 'Services',
-  description: 'Web design, web development, SaaS creation, and SEO solutions for growing businesses.',
+  title: 'Web Development & SaaS Services',
+  description: 'Custom web design, development, SaaS platforms, and SEO services for startups and small businesses. Explore our full range of digital services.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/services',
+  },
+  openGraph: {
+    title: 'Web Development & SaaS Services | Clarity Digital',
+    description: 'Custom web design, development, SaaS platforms, and SEO services for startups and small businesses.',
+    url: 'https://claritydigital.dev/services',
+  },
 }
 
 export const revalidate = 60

@@ -7,8 +7,16 @@ import { allProjectsQuery } from '@/lib/sanity/queries'
 import type { Project } from '@/types'
 
 export const metadata: Metadata = {
-  title: 'Work | Clarity Digital',
-  description: 'Explore our portfolio of web design, development, and SaaS projects for startups and established brands.',
+  title: 'Web Development Portfolio & Case Studies',
+  description: 'Explore our web development and SaaS portfolio. Custom websites and platforms for startups, real estate, automotive, and wellness industries.',
+  alternates: {
+    canonical: 'https://claritydigital.dev/work',
+  },
+  openGraph: {
+    title: 'Web Development Portfolio & Case Studies | Clarity Digital',
+    description: 'Explore our web development and SaaS portfolio. Custom websites and platforms for startups, real estate, automotive, and wellness industries.',
+    url: 'https://claritydigital.dev/work',
+  },
 }
 
 export const revalidate = 60
