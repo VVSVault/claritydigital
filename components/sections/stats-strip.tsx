@@ -9,7 +9,7 @@ import { statsContainerVariants, statItemVariants } from '@/lib/constants/animat
 
 const stats = [
   {
-    value: 10,
+    value: 50,
     suffix: '+',
     label: 'Projects',
     sublabel: 'Shipped',
